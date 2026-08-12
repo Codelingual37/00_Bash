@@ -1,0 +1,3 @@
+Useful Commands (I didn't know before/or need to practice):
+"history" - can see the history of commands. 
+"grep" [search term] [path] - find search term within a particular path
