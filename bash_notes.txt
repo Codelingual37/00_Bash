@@ -1,3 +1,32 @@
 Useful Commands (I didn't know before/or need to practice):
 "history" - can see the history of commands. 
-"grep" [search term] [path] - find search term within a particular path
+"grep" [optional flags] [search term] [path] - find search term within a particular path
+    useful flags -A[number] (lines "after"), -B[number] (lines "before"),
+    -C[number] ("context" so lines above and below)
+    -i (case insensitive)
+    -o (only prints parts that match)
+> operator = means to "overwrite into file"
+>> operator = means to "append into file"
+"less" [path] - allows you to see the file contents and scroll through 
+    using "/" allows you to search for a term
+"type" [command name] - gives you the type of the command
+"help" [command name] - gives you the documentation for buildin bash commands
+"compgen" -b - lists all the builtin commands
+"file" [file name] - tells you type of file
+"tr" [output text to change] [replacement text] - changes output text
+"bash" -n [file name] - checks for syntax errors in bash scripts without running it
+
+Variables:
+You can create variables by just typing in a term and then assigning it to a string
+    ex - name="dan"
+    $PATH = builtin variable that shows you executable files paths
+If you want to unset a variable, use the unset command.
+    "unset" [variable]
+You can also set varibles to commands. For example:
+    test=`ls -a` (be sure to use these types of quotes)
+    echo "$test"
+
+Scripting:
+Important to include the shebang at the top - #!/usr/bin/env bash
+
+1:14:44!

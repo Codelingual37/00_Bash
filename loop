@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+for thing in $@; do
+# The @ is a standin for all arguments, instead of just $1 $2...
+	echo "thing is $thing"
+done

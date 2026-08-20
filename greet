@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -n $1 ]]; then
+	name=$1
+# -n is from "help test" doc. means if string is NOT empty.
+else	
+	read -p 'Enter your name: ' name
+fi
+echo "hello $name"
